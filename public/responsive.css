@@ -1,0 +1,81 @@
+@media only screen and (max-width: 700px){
+    .header{
+        padding:50px 5px;
+    }
+    .header__top__wrap__img{
+        width: 80px;
+    }
+    .header__top__wrap__right__price{
+        font-size: 14px;
+    }
+    .header__top__wrap__right__menu{
+        width: 40px;
+        height: 40px;
+    }
+    .header__nav__wrap{
+        flex-direction: column;
+        align-items: inherit;
+
+    }
+    .header__nav__social{
+        margin-bottom: 20px;
+    }
+    .header__nav__navbar__icon{
+        display:block;
+        
+    }
+    .header__nav__contac{
+        margin-top:20px;
+    }
+    .header__nav__navbar{
+        margin-top:20px;
+        flex-direction: column;
+        background:rgb(221, 221, 221);
+        padding:20px 30px;
+        display:none;
+        animation: openMenu .5s ease-out;
+        transform-origin: top center;
+    }
+    .header__nav__navbar__item{
+        margin:10px 0;
+    }
+    .openMenu{
+        display:block;
+        animation: openMenu .5s ease-out;
+    }
+    @keyframes openMenu {
+        from{
+            transform: scaleY(0);
+        }
+        to{
+            transform: scaleY(1);
+        }
+    }
+    .banner__item{
+        padding:50px 50px;
+    }
+    .product__menu{
+        flex-wrap: wrap;
+    }
+    .product__modal{
+        width: 100%;
+        left:0;
+        top:10px;
+    }
+    @keyframes modalTop {
+        from{
+            opacity: 0;
+    
+        }
+        to{
+            opacity: 1;
+            top:10%;
+        }
+    }
+    .slide__feedback__container{
+        width: 90%;
+    }
+    .slider__feedbak__control{
+        left:5%;
+    }
+}
